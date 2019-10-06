@@ -3,6 +3,7 @@ MAINTAINER Oliver Faßbender <git.docker-arm64-glibc-builder@intrepid.de>
 # based on https://github.com/sgerrand/docker-glibc-builder
 # by Sasha Gerrand <github+docker-glibc-builder@sgerrand.com>
 ENV PREFIX_DIR /usr/glibc-compat
+# latest available stable version number can be found at https://www.gnu.org/software/libc/
 ENV GLIBC_VERSION 2.30
 RUN apt-get -q update \
 	&& apt-get -qy install \
